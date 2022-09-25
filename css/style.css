@@ -1,0 +1,369 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    height: 1000px;
+}
+
+.all {
+    height: 100vh;
+    background-image: url(../pic/home.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width:100%;
+    align-items: center;
+    z-index: 9999;
+}
+
+.bran img {
+    width: 60px;
+    margin-left: 28px;
+}
+
+.nav {
+    margin-right: 60px;
+    padding-top: 12px;
+    z-index: 100;
+}
+
+.nav ul li {
+    display: inline-block;
+    margin: 0 18px;
+    background-color: #2d2debf5;
+    padding: 6px;
+    border-radius: 6px;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.active , a:hover {
+    background-color: #2d2debf5;
+    color: white;
+    border-radius: 4px;
+}
+
+.bar {
+    display: none;
+    cursor: pointer;
+}
+
+.home-content {
+    position: absolute;
+    top: 18%;
+    left: 29%;
+    height: 100vh;
+    text-align: center;
+}
+
+@media screen and (max-width:770px){
+    
+    .nav ul li {
+        display: block;
+        margin:18px 0;
+        color: white;
+        display: none;
+        text-align: center;
+        border-radius: 6px;
+    }
+
+    .bar {
+        display: block;
+    }
+}
+
+
+#prevent {
+    padding: 74px 0;
+}
+
+#prevent img {
+    width: 90px;
+    margin: 12px 0;
+}
+
+.one {
+    padding: 60px 0;
+}
+
+.one div {
+    margin: 8px 0;
+    transition: 0.4s linear;
+}
+
+
+.one div:hover {
+  box-shadow: -2px -2px 2px rgb(183, 183, 189);
+}
+
+
+#symptoms {
+    background-image: url(../pic/coronavirus.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.text {
+   padding: 40px 0;
+   font-family: cursive;
+   font-weight: bold;
+   padding-bottom: 100px;
+}
+
+.rows {
+    display: flex;
+    
+}
+
+.fev {
+    width: 20%;
+    margin-top: 60px;
+}
+
+.fev img {
+    width: 90%;
+}
+
+.sym-content {
+    width: 78%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 20px;
+}
+
+.sym {
+    width: 30%;
+    border: 1px solid #96960a;
+    margin: 2px 4px;
+}
+
+.sym p {
+ font-weight: bold;
+}
+
+.sym img {
+    width: 60%;
+}
+
+#precautios{
+    display: flex;
+    justify-content: space-between;
+    padding: 70px 0;
+    background-color: white;
+}
+.left , .ri {
+    border: 1px solid rgb(203, 203, 211);
+    margin: 0 8px;
+    
+}
+
+.tit {
+    color: white;
+    padding: 12px;
+    font-size: 26px;
+}
+
+.left {
+    box-shadow: -2px -2px 2px rgb(127, 127, 211);
+    transition: 0.6s linear;
+}
+
+.ri {
+    box-shadow: -2px -2px 2px rgb(211, 127, 127);
+    transition: 0.6s linear;
+}
+
+.left:hover , .ri:hover {
+    transform: translateY(-7px);
+}
+
+.left-cont {
+    display: flex;
+    padding: 8px 0;
+}
+
+.left-pic img {
+    width: 80px;
+    margin: 0 8px;
+}
+
+@media screen and (max-width:770px) {
+    #precautios {
+        text-align: center;
+        flex-wrap: wrap;
+    }
+
+    .left {
+        width: 98%;
+        margin: 12px 0;
+    }
+
+    .ri {
+        width: 100%;
+    }
+    
+}
+
+
+#doctor {
+    padding: 70px 0;
+    min-height: 100vh;
+    background-image: url(../pic/stop.jpg);
+    background-size: cover;
+
+}
+
+.doctors {
+    display: flex;
+    justify-content: space-between; 
+    padding: 40px 0;
+}
+
+.doctors div {
+    width: 32%;
+    margin: 8px 12px;
+    text-align: center;
+    box-shadow: 2px 2px 2px rgb(209, 209, 216);
+    box-shadow: -2px -2px 2px rgb(209, 209, 216);
+    border-bottom: 2px solid rgb(183, 183, 189);
+    border-right: 2px solid #b7b7bd;
+    transition: 0.6s linear;
+}
+
+.lins {
+  text-align: center;
+  margin-left: 20%;
+  
+}
+
+.doctors div:hover {
+    transform: translateY(-7px);
+}
+
+
+.doctors div img {
+    width: 100px;
+    border-radius: 20%;
+}
+.doctors div h4 {
+     margin: 22px 0;
+}
+
+@media screen and (max-width:770px) {
+    .doctors {
+     flex-wrap:wrap ;
+     text-align: center;
+     margin: auto;
+    }
+    
+    .doctors div {
+        width: 90%;
+        margin: 12px 0;
+    }
+    
+}
+
+#hand-wash {
+    padding: 70px 0;
+}
+
+.wash {
+    display: flex;
+    padding: 40px 0;
+
+}
+.left-wash {
+    width: 64%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 40px;
+   
+}
+
+.left-wash div {
+    width: 30%;
+    margin: 8px;
+    text-align: center;
+    border: 1px solid rgb(218, 218, 212);
+    transition: 0.6s ease;
+}
+
+.left-wash div:hover {
+    transform: translateY(-7px);
+}
+
+.left-wash div img {
+    width: 100px;
+    padding: 10px 0;
+}
+
+.ri-wash {
+    width: 32%;
+    margin-right: 40px;
+   
+    text-align: center;
+}
+
+.ri-wash img {
+    width: 100%;
+    padding-top: 60px;
+}
+
+@media screen and (max-width:770px) {
+
+    .wash {
+    display: flex;
+    padding: 40px 0;
+    text-align: center;
+    width: 100%;
+    flex-wrap: wrap;
+
+}
+.left-wash {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 12px 0; 
+}
+
+.ri-wash {
+    width: 90%;
+    
+    text-align: center;
+}
+}
+
+
+.footer {
+    background-color: #b7b7bd8c;
+}
+
+
+.foot-cont {
+    display: flex;
+    justify-content: space-between;
+}
+
+.foot-cont div {
+    width: 32%;
+    text-align: center;
+}
+
+.foot-cont div h2 {
+    margin: 10px 0;
+}
+
